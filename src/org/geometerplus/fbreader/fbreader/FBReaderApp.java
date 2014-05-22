@@ -226,6 +226,7 @@ public final class FBReaderApp extends ZLApplication {
 		if (book == null) {
 			book = Collection.getRecentBook(0);
 			if (book == null || !book.File.exists()) {
+				//TODO wangtaoener 默认图书
 				book = Collection.getBookByFile(BookUtil.getHelpFile());
 			}
 			if (book == null) {

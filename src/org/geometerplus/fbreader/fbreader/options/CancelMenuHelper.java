@@ -76,12 +76,13 @@ public class CancelMenuHelper {
 	public List<ActionDescription> getActionsList(IBookCollection collection) {
 		final List<ActionDescription> list = new ArrayList<ActionDescription>();
 
-		if (ShowLibraryItemOption.getValue()) {
-			list.add(new ActionDescription(ActionType.library, null));
-		}
-		if (ShowNetworkLibraryItemOption.getValue()) {
-			list.add(new ActionDescription(ActionType.networkLibrary, null));
-		}
+		//TODO wangtaoenter去掉书库及网络书库
+//		if (ShowLibraryItemOption.getValue()) {
+//			list.add(new ActionDescription(ActionType.library, null));
+//		}
+//		if (ShowNetworkLibraryItemOption.getValue()) {
+//			list.add(new ActionDescription(ActionType.networkLibrary, null));
+//		}
 		if (ShowPreviousBookItemOption.getValue()) {
 			final Book previousBook = collection.getRecentBook(1);
 			if (previousBook != null) {
